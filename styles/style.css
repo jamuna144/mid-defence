@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 80px;
+  height: 100px;
   width: 100%;
   background: #222121;
   color: #fff;
@@ -14,10 +14,13 @@ header {
   align-items: center;
   position: relative;
   z-index: 1000;
+  word-spacing: 30px;
 }
 
+
+/*logo*/
 .logo img {
-  height: 70px; /* Adjust as needed */
+  height: 110px; /* Adjust as needed */
   width: auto;
 }
 
@@ -41,8 +44,20 @@ body {
   align-items: center;
   justify-content: space-between;
   word-spacing: 40px;
-  font-size: 20px;
+  font-size: 30px;
   }
+
+  .login-container{
+    font-size: 20px;
+  }
+
+ .white-link {
+  color: white;
+}
+
+/*hamburger icon*/
+
+
 
 
 nav ul li {
@@ -62,7 +77,8 @@ nav ul li:hover {
   font-size: 20px;
 }
 
-/* Hero Slider Styles */
+
+  /* Hero Slider Styles */
 .hero-slider {
   position: relative;
   width: 100%;
@@ -226,7 +242,7 @@ nav ul li:hover {
 
 
 
-/for login/
+/*for login*/
 
 .login-page {
   display: flex;
@@ -237,7 +253,7 @@ nav ul li:hover {
   background-color: #5e6533;
 }
 
-/centered login box/
+/*centered login box*/
     .login-box {
       background: rgb(255, 255, 255);
       padding: 2rem;
@@ -251,13 +267,13 @@ nav ul li:hover {
         text-align: center;
     }
 
-    /heading/
+    /*heading*/
     .login-box h2 {
       text-align: center;
       margin-bottom: 1rem;
     }
 
-    /input fields/
+    /*input fields*/
     .login-box input {
       width: 100%;
       height:50px;
@@ -268,7 +284,7 @@ nav ul li:hover {
       font-size:1rem;
     }
 
-/button styling/
+/*button styling*/
     .login-box button {
       width: 100%;
       padding: 0.6rem;
@@ -279,7 +295,6 @@ nav ul li:hover {
       border-radius: 6px;
       cursor: pointer;
     }
-  
 
 
 
@@ -605,8 +620,8 @@ body {
 
 /* Hero section */
 .contact-hero {
-  background-color: #d62828;
-  color: #fff;
+  background-color: #252a32;
+  color: #cd1d06;
   text-align: center;
   padding: 60px 20px 30px;
 }
@@ -693,7 +708,7 @@ body {
   background-color: #d62828;
   color: rgb(118, 14, 14);
   padding: 12px;
-  border: none;
+  border: black;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
@@ -703,7 +718,6 @@ body {
 .contact-form button:hover {
   background-color: #a21b1b;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .contact-content {
@@ -714,8 +728,7 @@ body {
 
 
 
-/for service/
-/* Global Styles */
+/*for service*/
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -723,7 +736,6 @@ body {
   color: #333;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px 30px;
@@ -743,9 +755,6 @@ body {
   font-weight: 300;
 }
 
-
-
-
 /* Services Container */
 .services-container {
   display: grid;
@@ -755,7 +764,6 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-
 
 /* Service Card as Rectangle Box */
 .service-card {
@@ -768,8 +776,6 @@ body {
   flex-direction: column;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
-
-
 
 .service-card:hover {
   border-color: #a21b1b;
@@ -803,22 +809,28 @@ body {
   font-weight: bold;
 }
 
-/* Responsive tweaks */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  .service-card {
-    height: auto;
-  }
-  .service-card img {
-    height: 160px;
-  }
+
+.social-icons {
+    display: flex;          /* Align in one row */
+    gap: 20px;              /* Equal spacing between icons */
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 10px;
 }
 
+.social-icons a {
+    font-size: 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.linkedin { color: #0A66C2; }
+.youtube  { color: #FF0000; }
+.twitter  { color: #1DA1F2; }
 
 
 
@@ -828,6 +840,8 @@ body {
 
 
 
+
+/*footer*/
 footer {
     background-color: #222;
     color: #fff;
